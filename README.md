@@ -51,9 +51,10 @@ $3 \cdot \frac{n/2}{n} \cdot \frac{n/2-1}{n-1} \cdot \frac{n/2}{n - 2} = \frac{3
 
 ### Third Case - Only the median is in the middle
 
-There are n/2 elements in the middle, n/4 elements in the first quartile, and n/4 elements in
-the last quartile. The are six combinations because we are essentially finding the number of ways
-that we can order three elements, which is 3! or 6. 
+To get the median to be the only value in the middle half, the two other elements need to be split
+between the first and fourth quartile. There are n/2 elements in the middle, n/4 elements in the 
+first quartile, and n/4 elements in the last quartile. The are six combinations because we are 
+essentially finding the number of ways that we can order three elements, which is 3! or 6. 
 
 $6 \cdot \frac{n/2}{n} \cdot \frac{n/4}{n-1} \cdot \frac{n/4}{n - 2} = \frac{6}{32} \cdot \frac{n^3}{n(n-1)(n-2)} 
 = \frac{3}{16} \cdot \frac{n^3}{n^3-3n^2+2n} = \frac{3n^3}{16n^3-48n^2+32n}$
